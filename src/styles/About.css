@@ -1,0 +1,401 @@
+.about {
+  margin-top: 80px;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg,  #91bee4 0%, #0c72e7ea 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Historia Section */
+.about-history {
+  padding: 100px 0;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-text h2 {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  border-left: 5px solid #3498db;
+  padding-left: 20px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.about-text strong {
+  color: #3498db;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Misión y Visión Section */
+.mission-vision-section {
+  background: #f8f9fa;
+  padding: 100px 0;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.mv-card {
+  background: white;
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.mv-card:hover {
+  transform: translateY(-10px);
+}
+
+.mv-card.mission {
+  border-top: 5px solid #3498db;
+}
+
+.mv-card.vision {
+  border-top: 5px solid #e74c3c;
+}
+
+.mv-icon {
+  font-size: 4rem;
+  margin-bottom: 25px;
+}
+
+.mv-card h2 {
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-size: 2.2rem;
+}
+
+.mv-card p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.mv-details h4 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.mv-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mv-details li {
+  padding: 8px 0;
+  padding-left: 30px;
+  position: relative;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.mv-details li:before {
+  content: "✓";
+  color: #27ae60;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Valores Section */
+.values-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.value-card {
+  background: #f8f9fa;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.value-card:hover {
+  background: white;
+  border-color: #3498db;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.value-card p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Equipo Section */
+.team-section {
+  background: #f8f9fa;
+  padding: 100px 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.team-member {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.member-photo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #3498db;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.member-role {
+  display: inline-block;
+  background: #3498db;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.team-member p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Especialidades Table */
+.specialties {
+  padding: 100px 0;
+  background: white;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.specialties-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  min-width: 800px;
+}
+
+.specialties-table th,
+.specialties-table td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.specialties-table th {
+  background: #2c3e50;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: sticky;
+  top: 0;
+}
+
+.specialties-table tr:hover {
+  background: #f8f9fa;
+}
+
+.specialties-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Estadísticas Section */
+.stats-section {
+  background: linear-gradient(135deg, #e2eaf0 0%, #91bee4 100%);
+  color: white;
+  padding: 80px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+
+.stat-item {
+  padding: 20px;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ecf0f1;
+  display: block;
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    border-left: none;
+    border-bottom: 3px solid #3498db;
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+  
+  .mv-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .mv-card {
+    padding: 30px 25px;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .specialties-table {
+    font-size: 0.9rem;
+  }
+  
+  .specialties-table th,
+  .specialties-table td {
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 60px 0;
+  }
+  
+  .about-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .about-hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
