@@ -8,6 +8,7 @@
   background: white;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  scroll-margin-top:100px;
 }
 
 .service-header {
@@ -162,6 +163,7 @@
   .service-detail {
     padding: 30px 20px;
     margin-bottom: 50px;
+    scroll-margin-top: 130px;
   }
   
   .service-header {

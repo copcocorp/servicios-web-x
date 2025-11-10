@@ -32,9 +32,9 @@ const Footer = () => {
           
           <div className="footer-section">
             <h4>Servicios</h4>
-            <a href="#web">Diseño Web</a>
-            <a href="#mobile">Apps Móviles</a>
-            <a href="#ecommerce">E-commerce</a>
+            <a href="/servicios#web">Diseño Web</a>
+            <a href="/servicios#mobile">Apps Móviles</a>
+            <a href="/servicios#ecommerce">E-commerce</a>
           </div>
           
           <div className="footer-section">

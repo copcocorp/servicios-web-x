@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom'
 import '../styles/Services.css'
+import useScrollToHash from '../hooks/useScrollToHash'
+
 
 const Services = () => {
+  useScrollToHash()
   return (
     <div className="services">
       <div className="container">
