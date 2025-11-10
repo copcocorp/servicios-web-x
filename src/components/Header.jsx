@@ -5,10 +5,20 @@ import '../styles/Header.css'
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
   return (
     <header className="header">
       <div className="container">
         <div className="header-content">
+          
+          {/* LOGO */}
           <div className="logo">
             <img src="/images/logo.png" alt="Servicios Web Logo" />
             <div className="logo-text">
@@ -16,26 +26,38 @@ const Header = () => {
               <p>Servicios web diseñados para tu negocio</p>
             </div>
           </div>
-          
+
+          {/* NAVEGACIÓN */}
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
-            <Link to="/" onClick={() => setIsMenuOpen(false)}>Inicio</Link>
-            <Link to="/nosotros" onClick={() => setIsMenuOpen(false)}>Sobre Nosotros</Link>
-            <Link to="/servicios" onClick={() => setIsMenuOpen(false)}>Servicios</Link>
-            <Link to="/clientes" onClick={() => setIsMenuOpen(false)}>Clientes</Link>
-            <Link to="/galeria" onClick={() => setIsMenuOpen(false)}>Galería</Link>
-            <Link to="/casos-exito" onClick={() => setIsMenuOpen(false)}>Casos de Éxito</Link>
-            <Link to="/contacto" onClick={() => setIsMenuOpen(false)}>Contacto</Link>
-            <a href="#admin" className="admin-link">Administración Clientes</a>
+            <Link to="/" onClick={closeMenu}>Inicio</Link>
+            <Link to="/nosotros" onClick={closeMenu}>Sobre Nosotros</Link>
+            <Link to="/servicios" onClick={closeMenu}>Servicios</Link>
+            <Link to="/clientes" onClick={closeMenu}>Clientes</Link>
+            <Link to="/galeria" onClick={closeMenu}>Galería</Link>
+            <Link to="/casos-exito" onClick={closeMenu}>Casos de Éxito</Link>
+            <Link to="/contacto" onClick={closeMenu}>Contacto</Link>
+            <a 
+              href="https://cliente-administracion.netlify.app/" 
+              className="admin-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+            >
+              Administración Clientes
+            </a>
           </nav>
 
+          {/* BOTÓN MENÚ (MÓVIL) */}
           <button 
-            className="menu-toggle"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className={`menu-toggle ${isMenuOpen ? 'open' : ''}`}
+            onClick={toggleMenu}
+            aria-label="Menú"
           >
             <span></span>
             <span></span>
             <span></span>
           </button>
+
         </div>
       </div>
     </header>
