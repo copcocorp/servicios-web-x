@@ -36,15 +36,7 @@ const Header = () => {
             <Link to="/galeria" onClick={closeMenu}>Galería</Link>
             <Link to="/casos-exito" onClick={closeMenu}>Casos de Éxito</Link>
             <Link to="/contacto" onClick={closeMenu}>Contacto</Link>
-            <a 
-              href="https://cliente-administracion.netlify.app/" 
-              className="admin-link"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-            >
-              Administración Clientes
-            </a>
+            
           </nav>
 
           {/* BOTÓN MENÚ (MÓVIL) */}

@@ -51,15 +51,7 @@ const Home = () => {
         <div className="container">
           <h2 className="section-title">Conoce Nuestro Trabajo</h2>
           <div className="video-container">
-            {/* <iframe 
-              width="100%" 
-              height="500" 
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
-              title="Demo de nuestros servicios"
-              frameBorder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowFullScreen
-            ></iframe> */}
+            {}
             <iframe 
             width="100%" 
             height="400" 
